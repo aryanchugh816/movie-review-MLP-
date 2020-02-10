@@ -1,0 +1,219 @@
+	<!DOCTYPE html>
+	<html lang="zxx" class="no-js">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="shortcut icon" href="../static/img/fav.png">
+		<meta name="author" content="AryanChugh">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta charset="UTF-8">
+		<title>Movie Recommendation System</title>
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+			<link rel="stylesheet" href="../static/css/linearicons.css">=
+			<link rel="stylesheet" href="../static/css/font-awesome.min.css">
+			<link rel="stylesheet" href="../static/css/magnific-popup.css">
+			<link rel="stylesheet" href="../static/css/nice-select.css">
+			<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+			<link rel="stylesheet" href="../static/css/bootstrap.css">
+			<link rel="stylesheet" href="../static/css/main.css">
+<style>
+  @import url(http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+  .rate {
+      display: inline-block;
+      border: 0;
+
+  }
+  .rate > input {
+      display: none;
+  }
+
+  .rate > label {
+      float: right;
+  }
+  .rate > label:before {
+      display: inline-block;
+      font-size: 3.1rem;
+      padding: .3rem .2rem;
+      margin: 0;
+      cursor: pointer;
+      font-family: FontAwesome;
+      content: "\f005 ";
+  }
+  .rate > label:last-child:before {
+      content: "\f006 ";
+  }
+  .rate .half:before {
+      content: "\f089 ";
+      position: absolute;
+      padding-right: 0;
+  }
+  input:checked ~ label,
+  label:hover, label:hover ~ label { color: #73B100;  }
+
+  input:checked + label:hover, input:checked ~ label:hover,
+  input:checked ~ label:hover ~ label,
+  label:hover ~ input:checked ~ label  { color: #A6E72D;  }
+
+
+center {
+  margin: auto;
+  padding: 10px 55px;
+}
+img{
+	padding-left: 10px;
+	padding-right: 10px;
+	width: 600px;
+}
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+body{
+	background-color: #222222;
+}
+
+#rating_stars{
+
+	display: none;
+
+}
+.custom-select{
+	white-space: pre-wrap;
+	overflow: hidden;
+	position: absolute;
+}
+
+
+</style>
+<script>
+function selectRadio(n){
+
+	document.getElementById("rating"+n).checked=true;
+
+}
+
+function fillTextArea() {
+
+	var sect = document.getElementById('example_reviews');
+	document.getElementById('text_review').innerHTML=sect.value;
+
+}
+
+</script>
+		</head>
+		<body>
+			<header class="default-header">
+				<div class="container">
+					<div class="header-wrap">
+						<div class="header-top d-flex justify-content-between align-items-center">
+							<div class="logo">
+								<h1>MOVIE RECOMMENDATION SYSTEM</h1>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<br>
+			<section class="about-area" id="appoinment">
+				<div class="container-fluid">
+					<div class="row d-flex justify-content-end align-items-center">
+						<div class="col-lg-6 col-md-12 about-left no-padding">
+							<img class="img-fluid" src="../static/img/75lD.gif" alt="">
+						</div>
+						<div class="col-lg-6 col-md-12 about-right no-padding">
+							<h1>Confused What to Watch?<br>See Ratings Here</h1>
+							    <form method="post" action="/">
+        
+								<textarea name="review" id="text_review" cols="60" rows="20" placeholder="Enter text here ....."></textarea> <br> <br>
+
+								<select name="review_dropdown" id="example_reviews" class="exr" onchange="fillTextArea()">
+
+									<option  value="select review" id="example_reviews" class="exr">--Select Review--</option>
+									
+									<option  value="This film was just brilliant casting location scenery story direction everyone's really suited the part they played and you could just imagine being there robert is an amazing actor and now the same being director and father came from the same scottish island as myself so i loved the fact there was a real connection with this film the witty remarks throughout the film were great it was just brilliant so much that i bought the film as soon as it was released and would recommend it to everyone to watch and the fly fishing was amazing really cried at the end it was so sad and you know what they say if you cry at a film it must have been good and this definitely was also congratulations to the two little boy's that played the role of norman and paul they were just brilliant children are often left out of the praising list i think because the stars that play them all grown up are such a big profile for the whole film but these children are amazing and should be praised for what they have done don't you think the whole story was so lovely because it was true and was someone's life after all that was shared with us all" id="example_reviews" class="exr">Example Review: 1</option>
+
+									<option value="Many have stated that orca  killer whale is a jaws rip off this is not really true though the enormous commercial success of jaws undoubtedly made these man vs beast stories more attractive for film makers in the second half of the '70s orca  killer whale would be better described as a modern day retread of moby dick it's a story about obsession on one hand a obsessive quest to avenge the death of its mate on the other a bounty obsessive quest to kill the whale before it can claim any more lives sadly orca killer whale emerges a very disappointing film its fundamentally interesting ideas somewhat ruined by hammy performances and preposterous plotting br br shark hunter nolan richard harris encounters a marine life researcher rachel charlotte diving off the atlantic coast of canada their meeting almost ends in disaster when rachel's team are attacked by a great white shark but a killer whale arrives in the nick of time to stop the shark after this nolan becomes increasingly obsessed with capturing a killer whale and selling it to an aquarium but his plans when he accidentally kills a pregnant female of the species while the distraught male looks on rachel tells nolan that a killer whale is an incredibly intelligent with a strong memory and feelings just like a human worse still native will warns him that the whale will always remember its grief and do everything it can to have revenge nolan initially tries to forget about the whole incident but the whale causes havoc in the fishing town and the disgruntled locals begin to demand that nolan puts to sea to track it down and destroy it eventually nolan is forced to pursue the killer the hunt leads all the way to the desolate ice of the arctic ocean where man and beast play out their final fatal battle against each other br br two things stand out in this film one is the haunting score by perhaps the greatest composer of film music of all time his talents wasted on various tenth rate during the 70s and 80s the other is the amazing widescreen photography of ted moore which makes the film consistently pleasing to the eye in every other department orca  killer whale is a shoddy film that does nothing to enhance the reputation of its talented cast and crew harris appears extremely ill throughout the film his hair black rings around his eyes and skin pale his performance lacks the usual vitality strikes a lot of sexy poses but fails to convince with her long winded and ill informed explanations about the ways of the rest of the actors are wasted in brief and undeveloped roles the most memorable of which sees bo derek getting her leg bitten off by the vengeful whale the plot is total nonsense from start to finish with such preposterous sequences as the whale deliberately starting a fire in the fishing village that and destroys the local although it's credible to suppose that are intelligent creatures with genuine emotions the idea that a whale could plot revenge against a single human adversary and carry it out so is utterly absurd orca  killer whale is really one for completists of the man vs beast cycle from the late 70s most will come away from the film shaking their heads in disbelief and grinding their teeth with despair" id="example_reviews" class="exr">Example Review: 2</option>
+
+									<option value="I actually saw this movie at a theater as soon as i handed the my money she said two words i had never heard at a theater before or since no as soon as i heard those words i should have just bye bye to my cash and gone home but no foolishly i went in and watched the movie this movie didn't make anyone in the theater laugh not even once not even mostly we sat there in stunned silence every ten minutes or so someone would yell this movie sucks the audience would applaud enthusiastically then sit there in stunned bored silence for another ten minutes" id="example_reviews" class="exr">Example Review: 3</option>
+
+									<option value="My comments may be a bit of a spoiler for what it's worth stop now if you care enough br br saving grace should have been titled a paper thin excuse for old british women to get high on screen this film is dumb the incidental music is an annoyance as are the obvious hackneyed tunes that sporadically pop up to comment on the narrative spirit in the sky for example oh i get it this is basically a cheech and chong movie made credible by its english setting and brenda overwhelming power to emotion on an audience using her voice alone i could literally hear the folks over at high times magazine receiving their over the enormous that this picture worst scene easy brenda attempts to her illicit on the street of london in a white dress suit not funny not original not interesting not a good movie the 7 2 rating is the result of over voting don't waste your time" id="example_reviews" class="exr">Example Review: 4</option>
+								</select>
+								<br><br>
+
+								<fieldset class="rate" id="rating_stars">
+                                    <input type="radio" id="rating10" name="rating" value="10" /><label for="rating10" title="5 stars"></label>
+                                    <input type="radio" id="rating9" name="rating" value="9" /><label class="half" for="rating9" title="4 1/2 stars"></label>
+                                    <input type="radio" id="rating8" name="rating" value="8" /><label for="rating8" title="4 stars"></label>
+                                    <input type="radio" id="rating7" name="rating" value="7" /><label class="half" for="rating7" title="3 1/2 stars"></label>
+                                    <input type="radio" id="rating6" name="rating" value="6" /><label for="rating6" title="3 stars"></label>
+                                    <input type="radio" id="rating5" name="rating" value="5" /><label class="half" for="rating5" title="2 1/2 stars"></label>
+                                    <input type="radio" id="rating4" name="rating" value="4" /><label for="rating4" title="2 stars"></label>
+                                    <input type="radio" id="rating3" name="rating" value="3" /><label class="half" for="rating3" title="1 1/2 stars"></label>
+                                    <input type="radio" id="rating2" name="rating" value="2" /><label for="rating2" title="1 star"></label>
+                                    <input type="radio" id="rating1" name="rating" value="1" /><label class="half" for="rating1" title="1/2 star"></label>
+                                    <input type="radio" id="rating0" name="rating" value="0" /><label for="rating0" title="No star"></label>
+                    </fieldset> <br>
+
+								<input type="submit" name="submit"><br><br>
+								 <a href="/"><input type="button" value="Reset"></a>
+								</form>
+
+								{% if results %}
+
+								<script>
+									selectRadio({{results}});
+								</script>
+
+								<style>
+									
+									#text_review {
+										display: none;
+									}
+
+									#rating_stars{
+
+										display: inline;
+
+									}
+
+									.exr{
+
+										display: none;
+
+									}
+
+								</style>
+
+								{% endif %}
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<footer>
+
+					<div><center>This project is made by Aryan Chugh and Shivansh Srivastava</center></div>
+
+			</footer>
+
+			<script src="../static/js/vendor/jquery-2.2.4.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+			<script src="../static/js/vendor/bootstrap.min.js"></script>
+			<script src="../static/js/jquery.ajaxchimp.min.js"></script>
+			<script src="../static/js/jquery.nice-select.min.js"></script>
+			<script src="../static/js/jquery.sticky.js"></script>
+			<script src="../static/js/parallax.min.js"></script>
+			<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+			<script src="../static/js/jquery.magnific-popup.min.js"></script>
+			<script src="../static/js/waypoints.min.js"></script>
+			<script src="../static/js/jquery.counterup.min.js"></script>
+			<script src="../static/js/main.js"></script>
+		</body>
+	</html>
